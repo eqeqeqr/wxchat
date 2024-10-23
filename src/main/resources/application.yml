@@ -1,0 +1,13 @@
+# application.properties
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 开启 MyBatis-Plus 分页插件
+    # page-helper 也是另一种分页插件，两者不要同时开启
+    # 这里配置的 dialect 需要根据你使用的数据库类型来设置
+    page-helper: true
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
